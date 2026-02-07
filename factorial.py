@@ -6,6 +6,7 @@ def factorial(n):
     while n > 1:
         result *= n
     return result
+if len(sys.argv)>1:
+    f = factorial(int(sys.argv[1]))
+    print(f)
 
-f = factorial(int(sys.argv[1]))
-print(f)
